@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Love Calculator 2026 | Astro Future</title>
+
+    <!-- 🔍 ADVANCED SEO & GEO-TARGETING -->
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <meta name="author" content="Sproutern Media Group">
+    <link rel="alternate" href="https://astro-future.sproutern.com/" hreflang="x-default" />
+    <link rel="alternate" href="https://astro-future.sproutern.com/?geo=us" hreflang="en-US" />
+    <link rel="alternate" href="https://astro-future.sproutern.com/?geo=uk" hreflang="en-GB" />
+    <link rel="alternate" href="https://astro-future.sproutern.com/?geo=in" hreflang="en-IN" />
+    <link rel="alternate" href="https://astro-future.sproutern.com/?geo=eu" hreflang="en-EU" />
+    
+    <!-- 📱 OpenGraph (Social Sharing) -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Astro Future">
+    <meta property="og:title" content="Astro Future | Professional Astrology Intelligence">
+    <meta property="og:description" content="Access the world's most advanced automated research node for Astrology. Part of the Sproutern Empire.">
+    <meta property="og:url" content="https://astro-future.sproutern.com/">
+    <meta property="og:image" content="https://astro-future.sproutern.com/posts/guide-hero.jpg">
+    
+    <!-- 🐦 Twitter / X Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Astro Future: The Future of Astrology">
+    <meta name="twitter:description" content="Deploying strategic intelligence for the 2026 digital era.">
+
+    <!-- 📊 JSON-LD Structured Data (Rich Snippets) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Astro Future",
+      "url": "https://astro-future.sproutern.com/",
+      "logo": "https://astro-future.sproutern.com/favicon.ico",
+      "sameAs": ["https://twitter.com/sproutern", "https://linkedin.com/company/sproutern"],
+      "description": "Professional intelligence node for Astrology"
+    }
+    </script>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body { background: #ff0055; color: white; font-family: 'Inter', sans-serif; display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 100vh; margin: 0; padding: 20px; overflow: hidden; }
+        .container { background: rgba(255, 255, 255, 0.1); backdrop-filter: blur(20px); border-radius: 30px; padding: 40px; max-width: 500px; width: 100%; text-align: center; border: 2px solid rgba(255,255,255,0.2); box-shadow: 0 20px 50px rgba(0,0,0,0.3); z-index: 10; }
+        h1 { font-family: 'Pacifico', cursive; font-size: 3rem; margin-bottom: 20px; text-shadow: 0 5px 10px rgba(0,0,0,0.2); }
+        input { width: 100%; padding: 15px; margin-bottom: 15px; border-radius: 50px; border: none; font-size: 1.2rem; text-align: center; outline: none; background: rgba(255,255,255,0.9); color: #ff0055; }
+        button { background: white; color: #ff0055; font-weight: bold; font-size: 1.5rem; padding: 15px 40px; border-radius: 50px; border: none; cursor: pointer; transition: 0.3s; box-shadow: 0 10px 20px rgba(0,0,0,0.2); margin-top: 20px; width: 100%; }
+        button:hover { transform: scale(1.05); box-shadow: 0 15px 30px rgba(0,0,0,0.3); }
+        
+        #result { margin-top: 30px; display: none; animation: popUp 0.5s ease-out; }
+        .percentage { font-size: 5rem; font-weight: 900; display: block; }
+        .message { font-size: 1.2rem; margin-bottom: 20px; }
+        
+        /* Affiliate / Ad Section */
+        .gift-btn { background: #ffcc00; color: #000; display: inline-block; text-decoration: none; padding: 15px 30px; border-radius: 10px; font-weight: bold; animation: pulse 2s infinite; }
+
+        /* Hearts Background */
+        .heart { position: absolute; color: rgba(255,255,255,0.3); animation: float 10s infinite linear; z-index: 1; }
+        @keyframes float { 0% { transform: translateY(110vh) rotate(0deg); opacity: 1; } 100% { transform: translateY(-10vh) rotate(360deg); opacity: 0; } }
+        @keyframes popUp { 0% { transform: scale(0); } 100% { transform: scale(1); } }
+        @keyframes pulse { 0% { transform: scale(1); } 50% { transform: scale(1.05); } 100% { transform: scale(1); } }
+    </style>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <!-- Floating Hearts -->
+    <div id="hearts"></div>
+
+    <div class="container">
+        <h1>💘 AI Love Calculator</h1>
+        <p>Enter your names to see if the stars align in 2026.</p>
+        
+        <div id="input-area">
+            <input type="text" id="name1" placeholder="Your Name">
+            <span style="font-size: 2rem; display: block; margin: 10px;">+</span>
+            <input type="text" id="name2" placeholder="Crush's Name">
+            <button onclick="calculateLove()">Calculate Love ❤️</button>
+        </div>
+
+        <div id="result">
+            <span class="percentage" id="score">0%</span>
+            <p class="message" id="msg">Calculating...</p>
+            
+            <div style="background: rgba(0,0,0,0.2); padding: 20px; border-radius: 15px;">
+                <p>Make them fall in love with the perfect gift:</p>
+                <a href="#" class="gift-btn">🎁 Buy Valentine's Gift (50% Off)</a>
+            </div>
+            
+            <button onclick="location.reload()" style="background: transparent; color: white; border: 1px solid white; margin-top: 20px; font-size: 1rem;">Try Another Couple</button>
+        </div>
+    </div>
+
+    <script>
+        // Generate Background Hearts
+        const heartsContainer = document.getElementById('hearts');
+        for(let i=0; i<30; i++) {
+            const h = document.createElement('div');
+            h.innerHTML = '❤️';
+            h.className = 'heart';
+            h.style.left = Math.random() * 100 + 'vw';
+            h.style.fontSize = Math.random() * 30 + 20 + 'px';
+            h.style.animationDuration = Math.random() * 5 + 5 + 's';
+            h.style.animationDelay = Math.random() * 5 + 's';
+            heartsContainer.appendChild(h);
+        }
+
+        function calculateLove() {
+            const n1 = document.getElementById('name1').value.trim().toLowerCase();
+            const n2 = document.getElementById('name2').value.trim().toLowerCase();
+            
+            if(!n1 || !n2) return alert("Please enter both names!");
+
+            document.getElementById('input-area').style.display = 'none';
+            document.getElementById('result').style.display = 'block';
+
+            // Consistent Random Logic (Same names = Same Score)
+            let combined = n1 + n2;
+            let hash = 0;
+            for (let i = 0; i < combined.length; i++) {
+                hash = combined.charCodeAt(i) + ((hash << 5) - hash);
+            }
+            let score = Math.abs(hash % 101);
+            
+            // Animation
+            let current = 0;
+            const timer = setInterval(() => {
+                document.getElementById('score').innerText = current + '%';
+                if(current >= score) {
+                    clearInterval(timer);
+                    showFinalMessage(score);
+                }
+                current++;
+            }, 20);
+        }
+
+        function showFinalMessage(score) {
+            let msg = "";
+            if(score > 90) msg = "🔥 Soulmates! Put a ring on it!";
+            else if(score > 75) msg = "💕 Perfect Match!";
+            else if(score > 50) msg = "🙂 Good Potential.";
+            else if(score > 25) msg = "😬 It's Complicated...";
+            else msg = "💀 Run Away!";
+            document.getElementById('msg').innerText = msg;
+        }
+    </script>
+    
+    <!-- Monetag Script Injection Spot -->
+    <script src="https://alwingulla.com/88/tag.min.js" data-zone="10403494" async data-cfasync="false"></script>
+</body>
+</html>
